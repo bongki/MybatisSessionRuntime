@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <!DOCTYPE mapper
+ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+ "http://www.mybatis.org/dtd/mybatis-3-mapper.dtd">
+ 
+<mapper namespace="sample">
+	
+	<select id="select" parameterType="com.ilmile.persistence.QueryDTO" resultType="hashmap">
+		${queryString}
+	</select>
+	
+	<select id="insert" parameterType="com.ilmile.persistence.QueryDTO">
+		${queryString}
+	</select>
+	
+	<select id="update" parameterType="com.ilmile.persistence.QueryDTO">
+		${queryString}
+	</select>
+	
+	<select id="delete" parameterType="com.ilmile.persistence.QueryDTO">
+		${queryString}
+	</select>
+</mapper>
